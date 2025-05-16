@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aditya Desai - Resume</title>
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+  <button onclick="playMusic()" id="play-btn">🔊 Play Music</button>
+  <audio id="bg-music" loop>
+    <source src="myProMusic.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="left-nav">
+      <div class="profile">
+        <img src="my.jpeg" alt="Aditya Desai" class="profile-img" />
+        <hr class="divider" />
+      </div>
+      <ul>
+        <li><a href="#home" onclick="showContent('home', this)">Home</a></li>
+        <li><a href="#aim" onclick="showContent('aim', this)">Aim</a></li>
+        <li><a href="#skills" onclick="showContent('skills', this)">Skills & Tools</a></li>
+        <li><a href="#projects" onclick="showContent('projects', this)">Projects</a></li>
+        <li><a href="#qualification" onclick="showContent('qualification', this)">Qualifications</a></li>
+        <li><a href="#certifications" onclick="showContent('certifications', this)">Certifications</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="top-section">
+        <div class="bio">
+          <h1>Aditya Desai</h1>
+          <p>Web Developer | Java Programmer | Data Structures Enthusiast</p>
+          <p>Email: <b>desaiaditya940@gmail.com</b> | Phone: 8073063943</p>
+          <p>GitHub: <a href="https://github.com/AdityaDesai192" target="_blank">AdityaDesai192</a></p>
+          <p>Location: Devanahalli, Bangalore</p>
+        </div>
+        <div class="screen-box" id="screen-box">
+          <img src="html.jpeg" class="hero-logo active-logo" />
+          <img src="css.jpeg" class="hero-logo" />
+          <img src="javascript.jpeg" class="hero-logo" />
+          <img src="java.jpeg" class="hero-logo" />
+          <img src="github.jpeg" class="hero-logo" />
+          <img src="vscode.jpeg" class="hero-logo" />
+        </div>
+      </div>
+
+      <!-- Lower Section -->
+      <div class="lower-section" id="content-area">
+        <div id="home" class="content-block active-block">
+          Welcome to my resume site. Explore my skills, projects, and qualifications.
+        </div>
+        <div id="aim" class="content-block">
+          Aspiring to become a passionate and perfect data structurist and web developer.
+        </div>
+        <div id="skills" class="content-block">
+          <h3><b>Skills:</b></h3>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Java, C Basics</li>
+          </ul>
+          <h3><b>Tools:</b></h3>
+          <ul>
+            <li>Git, GitHub, VS Code</li>
+          </ul>
+        </div>
+        <div id="projects" class="content-block">
+          <ul>
+            <li><b>Legacy Pulse:</b> A digital will executor system for critical moments. Stores final messages, docs, images, and audio. <i>Tools: HTML, CSS, JS, Node.js, NodeMailer</i></li>
+            <li><b>College Finder:</b> Find colleges by selecting a state. <i>Tools: HTML, CSS, JS, API</i></li>
+            <li><b>Simon Game:</b> Pattern memory game. <i>Tools: HTML, CSS, JS</i></li>
+            <li><b>Spotify Clone:</b> UI mimic with music playback. <i>Tools: HTML, CSS, JS</i></li>
+          </ul>
+        </div>
+        <div id="qualification" class="content-block">
+          <ul>
+            <li>BE (ECE) - Nagarjuna College of Engineering & Tech</li>
+            <li>PU - Sri Chaitanya PU College, Ilkal - 83.33%</li>
+            <li>10th - Margadarshan Central School - 77.7%</li>
+          </ul>
+        </div>
+        <div id="certifications" class="content-block">
+          <ul>
+            <li>NPTEL Java Program</li>
+            <li>Infosys Springboard Java</li>
+            <li>YBI - Data Science & AI/ML</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>
